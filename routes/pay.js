@@ -13,7 +13,7 @@ function Primary(data) {
     Primary.call(this, data);
     console.log(data);
     
-    request.post({url: 'https://api.vapehan.com/api/api/order/orders/notifPay', form: {key : JSON.stringify(data)}, headers: {'Content-Type' : 'application/json', 'Content-Length': data.length}}, function optionalCallback(err, httpResponse, body) {
+    request.post({url: 'https://katsuragir', form: {key : JSON.stringify(data)}, headers: {'Content-Type' : 'application/json', 'Content-Length': data.length}}, function optionalCallback(err, httpResponse, body) {
       if (err) {
         return console.error('Gagal', err);
       }
@@ -46,7 +46,7 @@ router.post('/', function(req, respone, next) {
           'Content-Length': contentLength,
           'Content-Type': 'application/x-www-form-urlencoded'
         },
-        url: 'https://pay.doku.com/Suite/CheckStatus',
+        url: 'katsuragir',
         body: formData,
         method: 'POST'},
         function optionalCallback(err, httpResponse, body) {
