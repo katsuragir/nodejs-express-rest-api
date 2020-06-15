@@ -7,7 +7,7 @@ router.get('/province', function(req, res, next) {
   var options = {
     url: 'https://api.rajaongkir.com/basic/province',
     headers: {
-      'key': '6c6fa910dd218c29157e04168ad7fa7a'
+      'key': 'katsuragir'
     }
   };
 
@@ -30,7 +30,7 @@ router.get('/province/:id', function(req, res, next) {
   var options = {
     url: 'https://api.rajaongkir.com/basic/province?id=' + id,
     headers: {
-      'key': '6c6fa910dd218c29157e04168ad7fa7a'
+      'key': 'katsuragir'
     }
   };
 
@@ -49,7 +49,7 @@ router.get('/city/:id', function(req, res, next) {
   var options = {
     url: 'https://api.rajaongkir.com/basic/city?province=' + id,
     headers: {
-      'key': '6c6fa910dd218c29157e04168ad7fa7a'
+      'key': 'katsuragir'
     }
   };
 
@@ -70,7 +70,7 @@ router.get('/city', function(req, res, next) {
   var options = {
     url: 'https://api.rajaongkir.com/basic/city',
     headers: {
-      'key': '6c6fa910dd218c29157e04168ad7fa7a'
+      'key': 'katsuragir'
     }
   };
 
@@ -91,7 +91,7 @@ router.get('/dtlcity/:id', function(req, res, next) {
   var options = {
     url: 'https://api.rajaongkir.com/basic/city?id=' + id,
     headers: {
-      'key': '6c6fa910dd218c29157e04168ad7fa7a'
+      'key': 'katsuragir'
     }
   };
 
